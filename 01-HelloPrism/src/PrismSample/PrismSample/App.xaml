@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<prism:PrismApplication
+    x:Class="PrismSample.App"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:prism="http://prismlibrary.com">
+    <Application.Resources>
+
+        <!--  Application resource dictionary  -->
+
+        <Color x:Key="PrimaryColor">#7e7d81</Color>
+        <Color x:Key="AccentColor">#00a5f2</Color>
+        <Color x:Key="TextColor">White</Color>
+
+        <Style TargetType="TabbedPage">
+            <Setter Property="BarBackgroundColor" Value="{StaticResource PrimaryColor}">
+            </Setter>
+            <Setter Property="BarTextColor" Value="{StaticResource TextColor}">
+            </Setter>
+            <Setter Property="SelectedTabColor" Value="{StaticResource AccentColor}">
+            </Setter>
+            <Setter Property="UnselectedTabColor" Value="{StaticResource PrimaryColor}">
+            </Setter>
+        </Style>
+        <Style TargetType="NavigationPage">
+            <Setter Property="BarBackgroundColor" Value="{StaticResource PrimaryColor}">
+            </Setter>
+            <Setter Property="BarTextColor" Value="{StaticResource TextColor}">
+            </Setter>
+        </Style>
+
+        <Style TargetType="Button">
+            <Setter Property="BackgroundColor" Value="{StaticResource AccentColor}">
+            </Setter>
+            <Setter Property="TextColor" Value="{StaticResource TextColor}">
+            </Setter>
+            <Setter Property="CornerRadius" Value="15">
+            </Setter>
+        </Style>
+
+        <Style x:Key="DarkButton" TargetType="Button">
+            <Setter Property="BackgroundColor" Value="{StaticResource PrimaryColor}">
+            </Setter>
+            <Setter Property="TextColor" Value="{StaticResource TextColor}">
+            </Setter>
+            <Setter Property="CornerRadius" Value="15">
+            </Setter>
+        </Style>
+    </Application.Resources>
+</prism:PrismApplication>

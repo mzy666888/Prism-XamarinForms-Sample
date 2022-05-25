@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="PrismSample.Views.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="{Binding Title}"
+    mc:Ignorable="d">
+
+    <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+        <Label Text="Welcome to Xamarin Forms and Prism!" />
+        <Button
+            Command="{Binding NavigateCommand}"
+            CommandParameter="/NavigationPage/ViewA"
+            Text="Go To ViewA">
+        </Button>
+        <Button
+            Command="{Binding NavigateCommand}"
+            CommandParameter="/NavigationPage/ViewA/ViewB/ViewC"
+            Style="{StaticResource DarkButton}"
+            Text="Deep Link  To ViewC">
+        </Button>
+    </StackLayout>
+
+</ContentPage>
