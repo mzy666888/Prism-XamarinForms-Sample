@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ServiceRegistrationApp.Views.MainPage"
+             Title="{Binding Title}">
+
+    <StackLayout VerticalOptions="Center" Margin="12">
+
+        <Button Text="Singleton Service Example"
+                Command="{Binding GoToViewACommand}"/>
+
+        <Button Text="Transient Service Example"
+                Command="{Binding GoToViewBCommand}"/>
+
+    </StackLayout>
+
+</ContentPage>

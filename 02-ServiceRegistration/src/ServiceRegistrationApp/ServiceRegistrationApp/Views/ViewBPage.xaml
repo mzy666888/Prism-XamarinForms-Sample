@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="ServiceRegistrationApp.Views.ViewBPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <StackLayout Margin="12" VerticalOptions="Center">
+
+        <Label
+            HorizontalOptions="CenterAndExpand"
+            HorizontalTextAlignment="Center"
+            Text="This page is using Transient Service, returned number value from service is: "
+            VerticalOptions="CenterAndExpand" />
+
+        <Label
+            FontSize="Large"
+            HorizontalOptions="Center"
+            HorizontalTextAlignment="Center"
+            Text="{Binding NumberValue}" />
+
+        <Button Command="{Binding GobackCommand}" Text="Go back" />
+
+    </StackLayout>
+</ContentPage>
