@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="PrismSample.Views.HomePage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Padding="20" Title="{Binding Title}"
+    Background="White">
+    <Frame HasShadow="true" VerticalOptions="Center">
+        <StackLayout>
+            <Label HorizontalTextAlignment="Center" Text="{Binding Title}" />
+
+            <StackLayout
+                Padding="50"
+                HorizontalOptions="Center"
+                Orientation="Horizontal">
+                <Label HorizontalOptions="FillAndExpand" Text="Isn't this fun?" />
+                <Switch
+                    HorizontalOptions="End"
+                    IsEnabled="false"
+                    IsToggled="{Binding IsFun}" />
+            </StackLayout>
+            <Button Command="{Binding EntryCommand}" Text="Provide Feedback" />
+            <Button Command="{Binding GoBackCommand}" Text="Back" />
+        </StackLayout>
+    </Frame>
+</ContentPage>
